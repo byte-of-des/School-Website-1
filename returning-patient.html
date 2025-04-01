@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returning Patient Check-In | Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Paradigm Pet Professionals Logo" class="logo">
+            <div class="header-title">
+                <h1>Paradigm Pet Professionals</h1>
+                <p>Evidence-based pet care advice for every pet lover</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Pet Information ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="cat.html">Cats</a></li>
+                    <li><a href="dog.html">Dogs</a></li>
+                    <li><a href="bird.html">Birds</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Appointments ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="new-patient.html">New Patient Forms</a></li>
+                    <li><a href="returning-patient.html">Returning Patient</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">About Us ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </li>
+            <li class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>Go</button>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="form-header">
+        <h1>Returning Patient Check-In</h1>
+        <p>Update your pet’s information before your next consultation.</p>
+    </section>
+
+    <section class="form-container">
+        <form action="#" method="POST">
+
+            <label for="name">Owner’s Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pet-name">Pet’s Name:</label>
+            <input type="text" id="pet-name" name="pet-name" required>
+
+            <label for="pet-age">Pet’s Age:</label>
+            <input type="number" id="pet-age" name="pet-age" min="0" required>
+
+            <label for="updates">Recent Health Updates:</label>
+            <textarea id="updates" name="updates" rows="4" placeholder="Describe any new medical concerns, diet changes, or behavior changes"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Paradigm Pet Professionals | Some Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
